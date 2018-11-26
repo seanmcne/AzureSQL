@@ -89,7 +89,7 @@ begin
 			i.[object_id]
 			,ObjectSchema = OBJECT_SCHEMA_NAME(i.object_id)
 			,ObjectName = object_name(i.object_id) 
-			,IndexName = idxs.name
+			,IndexName = replace(idxs.name, ']',']]')
 			,i.avg_fragmentation_in_percent
 			,i.page_count
 			,i.index_id
