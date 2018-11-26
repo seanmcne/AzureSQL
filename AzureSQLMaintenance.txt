@@ -168,7 +168,7 @@ begin
 		select 
 			ObjectSchema = OBJECT_SCHEMA_NAME(s.object_id)
 			,ObjectName = object_name(s.object_id) 
-			,StatsName = s.name
+			,StatsName = replace(s.name, ']',']]')
 			,sp.last_updated
 			,sp.rows
 			,sp.rows_sampled
