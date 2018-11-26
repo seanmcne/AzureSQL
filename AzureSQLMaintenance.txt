@@ -10,7 +10,7 @@
 
 Change Log: 
 	2017-12-12: fix total indexes reported to the output window. functionality was not impacted by this issue.
-
+	2018-11-26: fix escaping index names with brackets in the name 
 */
 
 if object_id('AzureSQLMaintenance') is null
